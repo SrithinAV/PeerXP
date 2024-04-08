@@ -1,0 +1,72 @@
+
+.form-container {
+  width: 350px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  position: fixed; 
+  top: 50%; /* Center the form vertically */
+  left: 50%; /* Center the form horizontally */
+  transform: translate(-50%, -50%); /* Adjust for the form's own dimensions */
+  background-color: #fff; 
+  z-index: 1000; /* Ensure the form stacks over other content */
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  z-index: 500; /* Lower than the form but higher than other content */
+}
+
+.form-input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box; /* Add this to include padding and border in the element's total width and height */
+  background-color: #d3d3d3; 
+}
+
+.form-submit {
+
+  position: absolute;
+  bottom: 20px;
+  right: 20px; /* Positioned at the bottom right corner */
+  padding: 10px;
+  background-color: #218838;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.form-submit:hover {
+  background-color: #0d7122;
+}
+
+.cancel-button {
+  width: auto;
+  padding: 10px;
+  background-color: #5b5b5b;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.cancel-button:hover {
+  background-color: #2b2c2c;
+}
+
+.button-container {
+  margin-top: 20px;
+}
+
+h4 {
+  margin-bottom: 5px; /* Reduce the space between the <h4> tag and the input box */
+}
